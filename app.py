@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 st.set_page_config(layout="wide")
 
@@ -286,8 +286,8 @@ with tab1:
                 st.dataframe(features_df,hide_index=True,use_container_width=True)
 with tab2:
 
-                   model=joblib.load(r'rf_model.pkl')
-                   scaler_class = joblib.load(r"scaler_model.pkl")
+                   model=pickle.load(r'rf_model.pkl')
+                   scaler_class = pickle.load(r"scaler_model.pkl")
                    scaled_cl_data = scaler_class.transform(features_df)
                    if st.button("Predict Status"):
                         prediction = model.predict(scaled_cl_data)
