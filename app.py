@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle5 as pickle
+import pickle
 
 st.set_page_config(layout="wide")
 
