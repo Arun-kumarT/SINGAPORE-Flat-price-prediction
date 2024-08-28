@@ -294,7 +294,8 @@ with tab1:
 with tab2:
 
                    scaled_cl_data = scaler_class.transform(features_df)
-                   if st.button("Predict Status"):
+                   if st.button("Predict Price of Flat"):
                         prediction = model.predict(scaled_cl_data)
                         price=prediction[0]
-                        st.write(f"Predicted Status:${price}")
+                        st.write(f"Predicted Price:${price}")
+                        St.write("This is the price range of the Flat in Singapore"
