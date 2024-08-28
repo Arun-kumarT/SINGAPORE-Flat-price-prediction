@@ -8,7 +8,12 @@ st.title(":rainbow[Singapore Resale price prediction]")
 st.write("This project is about Machine Learning model that could preduct Price of the flat in Singapore based on Singapore housing data from 1990 to 2024")
 st.write('* The resale flat market in Singapore is highly competitive, and it can be challenging to accurately estimate the resale value of a flat. There are many factors that can affect resale prices, such as location, flat type, floor area, and lease duration.')
 st.write('* This predictive model will be based on historical data of resale flat transactions, and it aims to assist both potential buyers and sellers in estimating the resale value of a flat.')
+with open("rf_model.pkl",'wb') as file:
+   model=pickle.load(file)
+with open("scaler_model.pkl",'wb') as file:
+   scaler_class=pickle.load(file)
 tab1,tab2 = st.tabs(["HOME",'**Get Price**'])
+
 
 with tab1:
     st.subheader(":green[Get the predicted  price of Flat in Singapore]")
@@ -286,8 +291,6 @@ with tab1:
                 st.dataframe(features_df,hide_index=True,use_container_width=True)
 with tab2:
 
-                   model=pickle.load(r'rf_model.pkl')
-                   scaler_class = pickle.load(r"scaler_model.pkl")
                    scaled_cl_data = scaler_class.transform(features_df)
                    if st.button("Predict Status"):
                         prediction = model.predict(scaled_cl_data)
