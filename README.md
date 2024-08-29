@@ -40,7 +40,7 @@ https://drive.google.com/file/d/1t5xSMcnLBjNA_DXcknPCUHEehOrByQIE/view?usp=shari
 
 
 ## 🚀 About Me
-As a recent graduate with a Master of Data Science from IIT-Madras, you have acquired a solid foundation in data science, statistics, and machine learning. Your education has been complemented by hands-on experience through various projects, where you've applied theoretical knowledge to solve real-world problems. This combination of academic excellence and practical exposure equips you with the necessary skills to excel in a fast-paced, data-driven environment.
+As a recent graduate with a Master of Data Science from IIT-Madras Guvi Geeks, you have acquired a solid foundation in data science, statistics, and machine learning. Your education has been complemented by hands-on experience through various projects, where you've applied theoretical knowledge to solve real-world problems. This combination of academic excellence and practical exposure equips you with the necessary skills to excel in a fast-paced, data-driven environment.
 
 
 ## 🔗 Links
