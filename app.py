@@ -298,4 +298,4 @@ with tab2:
                         prediction = model.predict(scaled_cl_data)
                         price=prediction[0]
                         st.write(f"Predicted Price:${price}")
-                        St.write("This is the price range of the Flat in Singapore")
+                        st.write("This is the price range of the Flat in Singapore")
